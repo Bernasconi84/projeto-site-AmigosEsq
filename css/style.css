@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    background-image: url("/img/lulaguerreiro.jpeg");
+    background-position:center;
+    background-size: cover;
+    color: black;
+    z-index: 6;
+}
+h1, h2, h3, p{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1{
+    font-size: 3rem;
+    font-style: italic;
+    text-align: center;
+    font-weight: 600;
+    color: white;
+    text-shadow: 3px 3px 8px black;
+    margin: 30px;
+}
+
+h2, h3{
+    text-align: center;
+    font-weight: 600;
+    color: white;
+    text-shadow: 3px 3px 8px black;
+}
+
+body, ul, li {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.2rem;
+    
+
+    
+}
+footer{
+    background: #131313;
+    height: 300px;
+    width: 100vw;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+a, li{
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+    
+}
+
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 1.2rem;
+    align-items: center;
+    flex-wrap: nowrap; 
+    background: #131313;
+    height: 150px;
+    min-width: 100%;
+    
+}
+#menu{
+    display: flex;
+    
+}
+
+#menu li{
+    margin-left: 60px;
+}
+ 
+#menu li a {
+    display: block;
+    padding: 0.9rem;
+    max-width: 100vw;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+.img{
+    float: left;
+    max-height: 100%;
+    height: 184px;
+    width: 300;
+    max-width: 100%;
+    margin-top: 40px;
+    margin-left: 33px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    border: 2px solid white;
+}
+p{
+    color: aliceblue;
+    text-align: justify;
+    padding: 2rem;
+    text-shadow: 0px 1px 6px black;
+    line-height: 2rem;
+    font-size: 1.5rem;
+}
+.data{
+    color: aliceblue;
+    text-align: justify;
+    padding: 2rem;
+    text-shadow: 0px 3px 6px black;
+    line-height: 2rem;
+    font-size: 1.5rem; 
+    font-weight: 600;
+}
+#logo img{
+    min-width: 180px;
+
+}
+
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1600px;
+    margin: 30px auto;
+}
+
+#container > div{
+  
+   align-items: center;
+   flex: 1 1 500px;
+   margin: 10px;
+   border: 1px solid #131313;
+   background: rgba(0, 0, 0, 0.5);
+   
+}
+.classe-artigos{
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    overflow: hidden;
+    
+}
+.artigos1{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1590px;
+    min-width: 600px;
+    padding: 2px;
+
+    
+}
+.artigos1 > h2{
+    font-style: italic;
+    margin: 30px auto;
+}
+
+.artigos1 > p{
+    text-shadow: 0px 1px 6px black;
+    background: rgba(0, 0, 0, 0.5);
+    margin: 10px;
+    text-align: justify;
+    line-height: 2rem;
+    padding: 2rem;
+    border: 1px solid #131313;
+    
+
+}
+
+.rodape{
+    display: flex;
+    justify-content: space-around;
+    align-items:baseline ;
+    flex-direction: row;
+
+}
+
+
+.redes ul li img{
+    margin: 0px  15px;
+    width: 30px;
+    height: 30px;
+}
+.redes ul li{
+    margin: 15px auto;
+ 
+}
+.redes > h3{
+   padding: 1rem;
+}
+.instit > h3{
+   padding: 1rem;
+}
+.instit ul li{
+    margin: 15px;
+ 
+}
+.video{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    
+}
+.video > iframe{
+    margin: 30px;
+}
+/* estilo galeria */
+
+.sessao{
+
+    margin-top: 300px;
+    height: 700px;
+    min-width: 100%;
+    max-width: 1800px;
+    
+
+}
+.b-menu{
+    background-color: black;
+    display: none;
+}
+
+@media(max-width: 900px)  {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .nav{
+        position: relative;
+        z-index: 0;
+    }
+
+    .b-menu{
+        display: flex;
+        position: absolute;
+        right: 30px;
+        top:45px;
+        cursor: pointer;
+        z-index: 1;
+       
+    }
+    #menu{
+        position: absolute;
+        display: none;
+        justify-content:space-between;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        width: 250px;
+        height: 500px;
+        padding: 45px;
+        margin-top: 600px;
+        border-radius: 9px;
+        right: 0px;
+        background: #131313;
+        z-index: 1;
+    
+        
+    }
+    #menu li{
+        margin: 0 auto;
+    }
+   
+}
+
+
+

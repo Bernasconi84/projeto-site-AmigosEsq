@@ -1,0 +1,26 @@
+.carousel{
+    margin: 0 auto;
+    height: auto;
+    width: 1200px;
+    margin-bottom: 30px;
+    max-width: 100%;
+    height: auto;
+    z-index: 0;
+}
+
+.carousel-item{
+    min-width: 30vw;
+    min-height: auto;
+    z-index: 0;
+}
+.carousel-item > img{
+    height: 900px;
+    width: auto;
+    z-index: 0;
+   
+}
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+    z-index: 0;
+}

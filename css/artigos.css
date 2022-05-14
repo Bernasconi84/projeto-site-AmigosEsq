@@ -1,0 +1,15 @@
+.artigos1 > img{
+    width: 300px;
+    height: 180px;
+    border-radius: 9px;
+    margin: 30px;
+    border: 1px solid white;
+}
+
+.artigos1:nth-child(2) img{
+    height: 230px;
+}
+.artigos1:nth-child(4) img{
+    height: 230px;
+}
+

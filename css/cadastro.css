@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.fundo{
+    margin: 0 auto;
+    min-width: 100vw;
+    min-height: 60vh;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(144, 15, 15, 0.5);
+    margin: 0 auto;
+    max-width: 360px;
+    min-height: 50vh;
+    border-radius: 15px;
+    margin-bottom: 60px;
+   
+}
+
+main h2{
+    font-weight: 600;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+main h2::before{
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    bottom: 1px;
+    left: 0;
+    background: red;
+    border-radius: 9px;
+}
+
+.input-field input{
+    outline: none;
+    font-size: 0.9rem;
+    color:  rgba(0, 0, 0, 0.9); 
+    
+}
+
+ input:focus ~ .underline::after{
+    transform: scaleX(1) ;
+} 
+ input::placeholder{
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.6);
+}   
+form{
+    display: flex;
+    flex-direction: column;
+}
+form input {
+    margin-top: 1rem;
+    padding: 0.4rem;
+  
+}
+form button[type="submit"]{
+    font-size: 0.9rem;
+    padding: 0.4rem;
+    background: linear-gradient(to left, red, rgb(112, 2, 2));
+    cursor:pointer;
+    color: white;
+    font-weight: 300;
+    border-radius: 4px;
+    transition: all 3ms ease-in-out;
+    margin-top: 30px;
+}
+form button[type="submit"]:hover{
+    letter-spacing: 0.5px;
+    background: linear-gradient(to right,rgb(112, 2, 2) , red);
+}
+span{
+    color: white;
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 60px;
+
+}
+.social{
+    padding: 0.4rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+.social a img{
+    margin: 0 0.5rem;
+    width: 30px;
+
+}
+.social a{
+    text-decoration: none;
+    color: white;
+}
+
+.f-login .social-twitter{
+    background: linear-gradient(to right, red, rgb(112, 2, 2));
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.f-login .social-facebook{
+    background: linear-gradient(to right, red, rgb(112, 2, 2));
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
